@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蓝牙通信 Demo</title>
+    <style>
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+      }
+      #status {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web 蓝牙通信 Demo</h1>
+    <button id="connectBtn">连接蓝牙设备</button>
+    <div id="status">状态: 未连接</div>
+
+    <!-- 添加消息发送区域 -->
+    <div id="messageArea" style="display: none">
+      <input type="text" id="messageInput" placeholder="输入要发送的消息" />
+      <button id="sendBtn">发送消息</button>
+    </div>
+
+    <div id="receivedMessages" style="margin-top: 20px">
+      <h3>接收到的消息：</h3>
+      <div id="messages"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
